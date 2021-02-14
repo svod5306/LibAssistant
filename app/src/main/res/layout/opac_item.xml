@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="6dp">
+    <ImageView
+        android:id="@+id/imgbook_opac"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:src="@drawable/nowborrowed"
+        android:foregroundGravity="left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp"/>
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="书名"
+        android:textSize="16sp"
+        android:layout_marginLeft="12dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/imgbook_opac"
+        app:layout_constraintLeft_toRightOf="@id/imgbook_opac"
+        />
+    <TextView
+        android:id="@+id/textViewAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintLeft_toLeftOf="@id/textViewTitle"
+        android:text="作者" />
+    <TextView
+        android:id="@+id/textViewIsbn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/textViewTitle"
+        app:layout_constraintTop_toBottomOf="@id/textViewAuthor"
+        android:text="ISBN"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSsh"
+        app:layout_constraintTop_toTopOf="@id/textViewIsbn"
+        app:layout_constraintLeft_toRightOf="@id/textViewIsbn"
+        android:text="SSH"
+        android:layout_marginLeft="12dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tetxViewCbd"
+        app:layout_constraintTop_toBottomOf="@id/textViewIsbn"
+        app:layout_constraintLeft_toLeftOf="@id/textViewIsbn"
+        android:text="出版地"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewGcd"
+        app:layout_constraintTop_toBottomOf="@id/tetxViewCbd"
+        app:layout_constraintLeft_toLeftOf="@id/tetxViewCbd"
+        android:text="馆藏地" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewGch"
+        app:layout_constraintTop_toTopOf="@id/textViewGcd"
+        app:layout_constraintLeft_toRightOf="@id/textViewGcd"
+        android:layout_marginLeft="12dp"
+        android:text="馆藏号" />
+</androidx.constraintlayout.widget.ConstraintLayout>

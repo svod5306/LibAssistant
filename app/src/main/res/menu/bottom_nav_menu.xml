@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_myinfo"
+        android:icon="@drawable/mine"
+        android:title="我的" />
+    <item
+        android:id="@+id/menu_my_books"
+        android:icon="@drawable/nowborrowed"
+        android:title="现借图书" />
+    <item
+        android:id="@+id/menu_history_books"
+        android:icon="@android:drawable/btn_star"
+        android:title="借阅历史" />
+
+</menu>
